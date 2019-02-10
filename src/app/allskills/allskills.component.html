@@ -1,0 +1,77 @@
+<div class=" uk-padding">
+        <table class="uk-table uk-table-striped">
+            <thead>
+                <tr>
+                    <th>$key</th>
+                    <th>name</th>
+                    <th>skill</th>
+                    <th>province</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of itemArray">
+                    <td>{{item.$key}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.skill}}</td>
+                    <td>{{item.province}}</td>
+                    <td><button class="uk-button uk-button-default uk-margin-small-right" type="button" (click)="moreInfo(item.$key)" >Details</button>
+    
+                    </td>
+                    <!-- <td><button class="uk-button uk-button-danger uk-button-small" (click)="onDelete(item.$key)">Delete</button>
+                    </td> --> 
+    
+                    <!-- This is the modal -->
+    <!-- <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <fieldset class="uk-fieldset">
+                    
+            
+        
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="name" name="name" [(ngModel)]="data.name">
+                        </div>
+                
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="phone number" name="phone" [(ngModel)]="data.phone">
+                        </div>
+                
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="province" name="province"[(ngModel)]="data.province">
+                        </div>
+                
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="skill" name="skill" [(ngModel)]="data.skill">
+                        </div>
+                
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="price" name="price"[(ngModel)]="data.price">
+                        </div>
+                
+                      
+                
+                        <div class="uk-margin">
+                            <textarea class="uk-textarea" rows="5" placeholder="comments" name="comments"[(ngModel)]="data.comments"></textarea>
+                        </div>
+                
+                    </fieldset> -->
+                <!-- <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button" (click)="onEdit(item.$key ,item.name ,item.skill ,item.phone, item.province ,item.price)">Save</button>
+                </p>
+            </div>
+        </div> -->
+        
+    
+    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
